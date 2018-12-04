@@ -20,7 +20,7 @@ steps:
 - task: Docker@1
   displayName: 'Build an image'
   inputs:
-    imageName: 'bestforyouregistry1.azurecr.io/repositoryname:$(Build.BuildId)'
+    imageName: 'bestforyouregistry1.azurecr.io/myimagedemo:$(Build.BuildId)'
 - task: Docker@1
   displayName: Login
   inputs:
@@ -31,4 +31,4 @@ steps:
   displayName: 'Push an image'
   inputs:
     command: 'push'
-    imageName: 'bestforyouregistry1.azurecr.io/$repositoryname:$(Build.BuildId)'
+    imageName: 'bestforyouregistry1.azurecr.io/myimagedemo:$(Build.BuildId)'
