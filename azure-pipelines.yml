@@ -24,7 +24,7 @@ steps:
 - task: Docker@1
   displayName: Login
   inputs:
-    azureSubscriptionEndpoint: 'ContosoAzureSubscription'
+    azureSubscriptionEndpoint: 'azureSubscriptionEndpoint'
     azureContainerRegistry: bestforyouregistry1.azurecr.io
     command: login
 - task: Docker@1
